@@ -7,8 +7,8 @@ let server = app.createServer(function(req,res){
     // 发送响应数据 "Hello World"
     if(req.url === "/api"){
         res.end(JSON.stringify([
-            {id:11, name: "zt"},
-            {id:22, name: "zt2"},
+            {id:111, name: "zt"},
+            {id:222, name: "zt2"},
             {id:33, name: "zt3"}
         ]));
     }else{

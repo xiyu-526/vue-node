@@ -9,7 +9,6 @@ let server = app.createServer(function(req,res){
         res.end(JSON.stringify([
             {id:111, name: "zt"},
             {id:222, name: "zt2"},
-            {id:33, name: "zt3"},
             {id:33, name: "zt3"}
         ]));
     }else{

@@ -8,7 +8,9 @@ let server = app.createServer(function(req,res){
     if(req.url === "/api"){
         res.end(JSON.stringify([
             {id:111, name: "zt"},
-            {id:222, name: "zt2"}
+            {id:222, name: "zt2"},
+            {id:333, name: "zt3"},
+            {id:444, name: "zt4"}
         ]));
     }else{
         res.end('Not Found 200');

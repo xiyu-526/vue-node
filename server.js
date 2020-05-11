@@ -10,9 +10,7 @@ let server = app.createServer(function(req,res){
             {id:111, name: "zt"},
             {id:222, name: "zt2"},
             {id:333, name: "zt3"},
-            {id:444, name: "zt4"},
-            {id:55, name: "zt5"},
-            {id:66, name: "zt6"}
+            {id:444, name: "zt4"}
         ]));
     }else{
         res.end('Not Found 200');

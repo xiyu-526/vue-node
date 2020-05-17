@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/xiyu-526/vue-node/issues"
   },
-  "homepage": "https://github.com/xiyu-526/vue-node#readme"
+  "homepage": "https://github.com/xiyu-526/vue-node#readme",
+  "dependencies": {
+    "mongoose": "^5.9.14"
+  }
 }

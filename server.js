@@ -1,7 +1,7 @@
 let app  = require("http");
 let mongoose = require('mongoose');
-let dbconfig = require('./dbs/config');
-let Person = require('./dbs/models/person')
+import dbconfig from './dbs/config'
+import Person from './dbs/models/person'
 
 
 mongoose.connect(dbconfig.dbs,{
@@ -13,7 +13,7 @@ let server = app.createServer(function(req,res){
     res.setHeader("Access-Control-Allow-Origin","*");
     if(req.url==="/add"){
 	const person = new Person({name:'lilei',age:14});
-person.save();
+    person.save();
 	//POST req.request.body.name
 	try{	
 		

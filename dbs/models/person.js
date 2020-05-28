@@ -1,6 +1,8 @@
-inport mongoose from 'mongoose'
-let personSchema = new mongoose.Schema({
+import mongoose from 'mongoose'
+
+let person = new mongoose.Schema({
 	name:String,
 	age:Number
 })
-module.exports=mongoose.model('Person',personSchema);
+
+export default mongoose.model('Person',person);

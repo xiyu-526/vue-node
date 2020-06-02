@@ -1,19 +1,19 @@
 let app  = require("http");
-let mongoose = require('mongoose');
-import dbconfig from './dbs/config'
-import Person from './dbs/models/person'
+// let mongoose = require('mongoose');
+// import dbconfig from './dbs/config'
+// import Person from './dbs/models/person'
 
 
-mongoose.connect(dbconfig.dbs,{
-	useNewUrlParser:true
-})
+// mongoose.connect(dbconfig.dbs,{
+// 	useNewUrlParser:true
+// })
 
 let server = app.createServer(function(req,res){
     //设置允许跨域的域名，*代表允许任意域名跨域
     res.setHeader("Access-Control-Allow-Origin","*");
     if(req.url==="/add"){
-	const person = new Person({name:'lilei',age:14});
-    person.save();
+	// const person = new Person({name:'lilei',age:14});
+    // person.save();
 	//POST req.request.body.name
 	try{	
 		

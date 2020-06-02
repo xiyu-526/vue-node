@@ -1,6 +1,6 @@
 FROM node
 LABEL name="vue-node"
-LABEL version ="1.0"
+LABEL version ="1.1"
 COPY . /app
 WORKDIR /app
 RUN npm install
